@@ -22,7 +22,7 @@ console.log(customer.name)
 Customer.bisey = "Bişey"; //dikkat direk sınıfa atama yaptık instance a değil. *** CLASS a yapılan PROROTYPING
 console.log(Customer.bisey) //çalışır.
 console.log(customer.bisey) //undefined.
-//Ancak hala ctor içindeki parametrelere ulaşamadık. Bunun için this keyword ünü kullanacağız. this kelimesi JS'de instance ı ifade eder yani buradaki 11 satırdaki küçük c ile başyana customer a. Buradan 6. ve 7.satırdaki tanımlamayı yaptık:
+//Ancak hala ctor içindeki parametrelere ulaşamadık. Bunun için this keyword ünü kullanacağız. this kelimesi JS'de instance ı ifade eder yani buradaki 11 satırdaki küçük c ile başyana customer a. Buradan 9. ve 10.satırdaki tanımlamayı yaptık:
 console.log(customer.customerNumber) // artık ctor daki customerNumber a erişebiliyoruz.
 
 
@@ -42,7 +42,7 @@ class CorporateCustomer extends Customer{
     }
 }
 
-//.map({})  bizim için array ı dönüyor. foreach gibi. O an gezdiği elemana takma isim veriyor. --tek satırlık işlem yapacağın zaman işerdeki süslü paranteze gerek yok. map ile oluşan değeri return de edebiliriz. mesela     .map(p=>{p.unitPrice = p.unitPrice * 1.18 return p})
+//.map({})  bizim için array ı dönüyor. foreach gibi. O an gezdiği elemana takma isim veriyor. --tek satırlık işlem yapacağın zaman içerdeki süslü paranteze gerek yok. map ile oluşan değeri return de edebiliriz. mesela     .map(p=>{p.unitPrice = p.unitPrice * 1.18 return p})
 
 // .filter() elimizdeki array ı filtrelemeye yarar. SONUÇTA YEPYENİ BİR ARRAY OLUŞTURUR. state management de ekranın yeniden render edilmesi için referansın değişmesi gerekir (eğer referans tipse) bu yüzden önemlidir. Referans değiştiği an ekran yeniden render edilir.
 

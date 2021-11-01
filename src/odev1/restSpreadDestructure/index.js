@@ -11,7 +11,7 @@ let showProducts = function (id,...products) {
   //console.log(typeof showProducts)
   //showProducts(10,["Elma","Armut","Karpuz"])//array içinde array olarak görür.
   //showProducts(10,"Elma","Armut","Karpuz") //array içinde 3 eleman görür.
-  // ÇÜNKÜ ...products ın kendisi bir array'dir. Bunun içine bir array daha gönderirsen; ...products zaten array, içine bir de üç meyveli array ı önderdin ve array içinde array oldu başka bir yeyişle ...products arrayinin içinde tek nir eleman oldu o eleman da ["Elma","Armut","Karpuz"] array ı olur. Onun için array içinde array olur.
+  // ÇÜNKÜ ...products ın kendisi bir array'dir. Bunun içine bir array daha gönderirsen; ...products zaten array, içine bir de üç meyveli array ı gönderdin ve array içinde array oldu başka bir deyişle ...products arrayinin içinde tek bir eleman oldu o eleman da ["Elma","Armut","Karpuz"] array ı olur. Onun için array içinde array olur.
   
   /************************   SPREAD   ****************************** */
   
